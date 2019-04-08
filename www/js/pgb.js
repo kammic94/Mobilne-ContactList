@@ -5,8 +5,8 @@ document.addEventListener("deviceready",onDeviceReady, false);
 
 
 function onDeviceReady() {
-	navigator.notification.beep(1);
+	console.log(navigator.contacts);
 }
-function checkContacts() {
-    console.log(navigator.contacts);
-}
+
+
+
