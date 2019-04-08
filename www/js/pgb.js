@@ -2,8 +2,6 @@ function init() {
 	
 document.addEventListener("deviceready",onDeviceReady, false);
 }
-
-
 function onDeviceReady() {
 	navigator.contacts.find(fields, onSuccess, onError, options);
 }
@@ -16,10 +14,9 @@ function onError(contactError) {
 };
 
 var options = new ContactFindOptions();
-options.filter="*";
-options.multiple=true;
-options.hasPhoneNumber=true;  
-var fields = ["displayName", "name", "PhoneNumber"];
-navigator.contacts.find(fields, onSuccess, onError, options);
+    options.filter   = "";
+	options.multiple = true;
+    var fields = ["displayName","phoneNumbers"];
+    navigator.contacts.find(fields, onSuccessContact, onErrorContact, options);
 
 
