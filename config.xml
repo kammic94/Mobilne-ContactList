@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+		id          = "CONTACT-LIST"
+        version     = "1.0.0" >
+
+    <name>CONTACT-LIST</name>
+    <description>NETWCONTACT-LIST</description>
+	<platform name="android" />
+	
+	<plugin name="cordova-plugin-device" spec="2.0.1" />
+	<plugin name="cordova-plugin-dialogs" spec="2.0.1" />
+	<plugin name="cordova-plugin-contacts" spec="~3.0.1" />
+</widget>
